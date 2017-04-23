@@ -17,7 +17,7 @@ document.getElementById("confirm").onclick = function calculate() {
             
     
 // Dunno if innerText will work since it has a variable.
-    document.getElementsByTagName("P")[0].innerHTML = "Your cat is " + areaCm + "cm big!";
+    document.getElementsByTagName("P")[0].innerHTML = "Your cat is " + areaCm + "cm<sup>2</sup> big!";
     
     ball.style.width = weight + "em";
     ball.style.height = weight + "em";

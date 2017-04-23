@@ -2,10 +2,12 @@
 <html>
 <head>
 <title>Let's get FAT!</title>
+<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+<link rel="stylesheet" href="animations.css">    
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="header">
+    <div id="header" class="fadeIn">
         <div id="text-fix">
             <span class="header-text" id="header-fat">Fat</span>
             <span class="header-text" id="header-cat">Cat</span>
@@ -20,17 +22,24 @@
             <li></li>
         </ul>
     
-    <div id="cat-ball"></div>
+    <div id="cat-ball" class="pulse"></div>
     
-<!--    <input type="" name="fatSlider" value="ballRadius" placeholder="DO YOUR WORST!"/><br>-->
+
     <div id="bottom-content">
+        <h3>FAT meter</h3>
+        <div id="meter">
+            <span id="kinda">kinda</span>
+            <span id="hella">HELLA</span>
+        </div>
+        
         <input type="range" value="fatFactor" id="fatness" min="0" max="100" step="10"/><br>
 
-        <button type="button" onclick="calculate()" id="confirm">PUSH</button>
+        <button type="button" onclick="calculate()" id="confirm">CLAIM YOUR CAT!</button>
 
         <p id="report"></p>
     </div>
     
-<script src="script.js"></script>    
+<script src="script.js"></script>
+<script src="https://code.jquery.com/jquery.min.js"></script>
 </body>
 </html>

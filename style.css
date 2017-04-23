@@ -1,3 +1,8 @@
+html {
+    background-color: aqua;
+    font-family: sans-serif;
+}
+
 li {
     display: inline;
     list-style: none;
@@ -6,12 +11,13 @@ li {
 #cat-ball {
     border-radius: 50%;
     margin: 0 auto;
+/*
     width: 30em;
     height: 30em;
-/*    background-image: url("images/fatcat2.png");*/
+*/
     background-size: cover;
     background-position: center;
-/*    background-color: red;*/
+    box-shadow: 0em 0em 3em #fcfc5a;
 }
 #header-exclaim {
     font-size: 2.9em;
@@ -19,15 +25,15 @@ li {
     clear: right;
     margin-top: -0.5em;
     margin-left: 0.2em;
-/*    fix later*/
-    position: fixed;
-    display: none;
+    position: absolute;
 }
 
 #header {
+    visibility: hidden;
     width: 100%;
     height: 100%;
     margin-top: 0em;
+    margin-bottom: 2em;
     color: white;
     background-color: black;
     font-size: 2em;
@@ -49,4 +55,24 @@ li {
 
 #header-ball {
     font-size: 1.4em;
+}
+
+#kinda {
+    clear: left;
+    float: left;
+    margin-left: 2em; 
+}
+
+#hella {
+    clear: right;
+    float: right;
+    margin-right: 2em;
+}
+
+#fatness {
+    width: 40em;
+}
+
+#report {
+    
 }
