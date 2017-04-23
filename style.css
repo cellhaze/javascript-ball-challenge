@@ -5,9 +5,47 @@ li {
 
 #cat-ball {
     border-radius: 50%;
+    margin: 0 auto;
 /*
     width: 30em;
     height: 30em;
 */
     background-color: red;
+}
+#header-exclaim {
+    font-size: 2.9em;
+    float: right;
+    clear: right;
+    margin-top: -0.5em;
+    margin-left: 0.2em;
+/*    fix later*/
+    position: fixed;
+    display: none;
+}
+
+#header {
+    width: 100%;
+    height: 100%;
+    margin-top: 0em;
+    color: white;
+    background-color: black;
+    font-size: 2em;
+}
+
+#bottom-content, #text-fix {
+    text-align: center;
+}
+
+#text-fix {
+    
+    text-transform: uppercase;
+/*    font-style: italic;*/
+}
+
+#bottom-content {
+    margin-top: 2em;
+}
+
+#header-ball {
+    font-size: 1.4em;
 }

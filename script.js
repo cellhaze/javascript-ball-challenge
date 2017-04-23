@@ -6,7 +6,7 @@ document.getElementById("confirm").onclick = function calculate() {
     var fat = document.getElementById("fatness"), 
         ball = document.getElementById("cat-ball"),
         fatAmmount = fat.value,
-        weight = fatAmmount / 1.2,
+        weight = fatAmmount / 2.5,
         radius= weight / 2,
         areaEm = (radius * 3.14) * 2,
         areaCm = areaEm / 2.371;
@@ -22,6 +22,8 @@ document.getElementById("confirm").onclick = function calculate() {
     ball.style.width = weight + "em";
     ball.style.height = weight + "em";
     ball.style.backgroundColor = "blue";
+    
+    
 };
         
 

@@ -6,25 +6,30 @@
 </head>
 <body>
     <div id="header">
-<!--        Make center later-->
-        <h1>Fat Cat Ball!</h1>
-        <ul class="nav">
+        <div id="text-fix">
+            <span class="header-text" id="header-fat">Fat</span>
+            <span class="header-text" id="header-cat">Cat</span>
+            <br>
+           <span class="header-text" id="header-ball">Ball</span>
+            <span id="header-exclaim">!</span> 
+        </div>
+    </div>
+    <ul class="nav">
             <li></li>
             <li></li>
             <li></li>
         </ul>
-    </div>
     
     <div id="cat-ball"></div>
     
 <!--    <input type="" name="fatSlider" value="ballRadius" placeholder="DO YOUR WORST!"/><br>-->
-    
-    <input type="range" value="fatFactor" id="fatness" min="0" max="100" step="10"/><br>
-    
-    <button type="button" onclick="calculate()" id="confirm">PUSH</button>
-    
-    <p></p>
-    
+    <div id="bottom-content">
+        <input type="range" value="fatFactor" id="fatness" min="0" max="100" step="10"/><br>
+
+        <button type="button" onclick="calculate()" id="confirm">PUSH</button>
+
+        <p id="report"></p>
+    </div>
     
 <script src="script.js"></script>    
 </body>
