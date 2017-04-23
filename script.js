@@ -21,7 +21,15 @@ document.getElementById("confirm").onclick = function calculate() {
     
     ball.style.width = weight + "em";
     ball.style.height = weight + "em";
-    ball.style.backgroundColor = "blue";
+//    ball.style.backgroundColor = "blue";
+    
+    if (fatAmmount > 75) {
+        ball.style.backgroundImage = "url('images/fatcat4.png')" ;
+    } else if (fatAmmount < 25) {
+        ball.style.backgroundImage = "url('images/fatcat3.png')"; ;
+    } else {
+        ball.style.backgroundImage = "url('images/fatcat1.png')"; ;
+    };
     
     
 };
