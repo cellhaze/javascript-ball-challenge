@@ -1,0 +1,11 @@
+li {
+    display: inline;
+    list-style: none;
+}
+
+#cat-ball {
+    border-radius: 50%;
+    width: 30em;
+    height: 30em;
+    background-color: red;
+}
