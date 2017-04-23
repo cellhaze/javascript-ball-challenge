@@ -5,7 +5,9 @@ li {
 
 #cat-ball {
     border-radius: 50%;
+/*
     width: 30em;
     height: 30em;
+*/
     background-color: red;
 }

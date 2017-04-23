@@ -1,43 +1,24 @@
- document.getElementById("confirm").addEventListener("click", calculate);
+// document.getElementById("confirm").addEventListener("click", calculate());
 
 //Function runs as button is pushed
-function calculate() {
+document.getElementById("confirm").onclick = function calculate() {
         
     var fat = document.getElementById("fatness"), 
         ball = document.getElementById("cat-ball"),
         fatAmmount = fat.value,
-        width = fatAmmount / 10;
-//        msg = document.getElementsByTagName("P"),
-//        weight = findWeight(fat.value);
-        
+        weight = fatAmmount / 5;
     
-
-//    alert(fatAmmount);    
-//    msg.appendChild("Hi");
-        
+    alert(weight);
+    
+// whenever I change this from .innerHTML it says that the function is undefined. Do I need parameters?
     document.getElementsByTagName("P")[0].innerHTML = "Hi";
+    
+    ball.style.width = weight + "em";
+    ball.style.height = weight + "em";
+    ball.style.backgroundColor = "blue";
+};
         
 
     
-//     function findWeight(r, width) {
-//            var area = (r * 3.14) * 2;
-//            r = width / 2;
-//        }
-//    
-//    console.log("Your cat is " + weight + " big!"); 
-    };
 
-  
-
-
-/*Initially my findWeight funciton was inside my sentece function. However, this way, the console log would never be called, so I separated them. That way the console log when be called when the button is clicked like everything else in calculate()*/
-
-//    var sentence = function(weight) {       
-//        }
-    
-    
-    
-//    $('input[name=fatSlider]').val();
-//    
-//    $('input[name=fatSlider]').on('change', handleChange);
 
